@@ -1,0 +1,118 @@
+.slider {
+    height: 30vw;
+    background-color:rgb(0, 0, 0);
+    margin-top: 0.3vw;
+    font-size: 2vw;
+}
+
+.item {
+    display: flex;
+    justify-content: space-evenly;
+    height: inherit;
+    color: white;
+    vertical-align: middle;
+}
+
+.item_col {
+    align-self: center;
+    text-align: center;
+}
+
+.btn {
+    padding: 1vw;
+    background-color: blueviolet;
+    color: aliceblue;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:rgb(98, 32, 160);
+    transition: 0.5s;
+}
+
+.slider .item img {
+    object-fit: cover;
+    height: 30vw;
+}
+
+.previous, .next {
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.arrow_mobile {
+    display: none;
+}
+
+.previous:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* padding: 5px; */
+}
+
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+    /* Устанавливаем и изменяем степень прозрачности: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .item {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .slider {
+        height: 85vw;
+        padding: auto;
+        font-size: 3vw;
+    }
+    .item_col
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* margin-top: 0; */
+    }
+    .slider .item img {
+        width: 50%;
+        height: 65%;
+        padding-left: 25%;
+        z-index: 1;
+        position: relative;
+    }
+
+    .previous, .next {
+        display: none;
+    }
+
+    .arrow_mobile {
+        width: 80%;
+        display: flex;
+        justify-content:space-between;
+        top: 0; left: 0;
+        position: absolute;
+        z-index: 2;
+       margin-top: 200%;
+       margin-left: 19%;
+    }
+
+    .previous_mobile, .next_mobile {
+        align-self:center;
+        cursor: pointer;
+        transition: 0.5s;
+        color: white;     
+    }
+    
+}

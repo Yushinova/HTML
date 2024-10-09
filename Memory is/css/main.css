@@ -1,0 +1,125 @@
+@import url('div.css');
+@import url('elements.css');
+@import url('slider.css');
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header
+{
+    width: 100%;
+    height: 6vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+footer
+{
+    height: 8vw;
+}
+
+@media (max-width: 600px) {
+    header
+    {
+        height: 28vw;
+        position: relative;
+    }
+    .head-div
+    {
+        font-size: 4vw;
+        flex-direction: column;
+    }
+    .logo-div
+    {
+        width: 35%;
+        height: 35%;
+    }
+    .menu-div
+    {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+   a 
+   {
+    width: 20vw;
+    height: 6vw;
+    font-size: 3vw;
+   }
+    .menu-button
+    {
+        width: 20vw;
+        height: 6vw;
+        font-size: 3vw;
+    }
+    .button-div
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 6vw;
+    }
+    .menu-ul
+    {
+        margin-right: 6%;
+    }
+    .text-container
+    {
+        font-size: 4vw;
+        margin-top: 35%;
+        line-height: 2vw;
+    }
+    .discount-div
+    {
+        height: 10vw;
+        font-size: 4vw;
+        text-align: center;
+    }
+    .info-div
+    {
+        width: 100%;
+        height: 60vw;
+    }
+    .youtube-div
+    {
+        width: 40%;
+        height: 70%;
+    }
+    .info-div-h
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+    }
+    .info-div-elem
+    {
+        width: 100vw;
+        height: 3vw;
+    }
+    .info-div-text
+    {
+        width: 40vw;
+        font-size: 3vw;
+    }
+    footer 
+    {
+        height: 25vw;
+    }
+    .footer-div-item
+    {
+        width: 100%;
+        height: 20%;
+        font-size: 4vw;
+    }
+    .footer-img
+    {
+        height: 3vw;
+        width: 3vw;
+        margin-top: 1vw;
+    }
+}

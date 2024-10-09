@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+   
+  <header>
+    <div class="head-div">
+        <div class="logo-div"></div>
+        <div class="menu-div">
+            <ul class="menu-ul">
+                <li class="menu-li"><a class="head-link" href="index.html">Главная</a></li>
+                <li class="menu-li"><a class="head-link" href="#slider">Работы</a></li>
+                <li class="menu-li"><a class="head-link" href="#footer-div">Контакты</a></li>
+                <li class="menu-li"><a class="head-link" href="./album/index.html">О нас</a></li>
+            </ul>                
+        </div>
+        <div class="button-div">
+            <a href="./checkout/index.html">
+                <button class="menu-button">Заказать </button>
+            </a>   
+        </div>
+    </div>
+  </header>
+  <main>
+    <div class="video-div">
+        <div class="video-content">
+            <video style="opacity: 80%; width: 100%;"
+            src="imges/Video_1.mp4" type="video/mp4" autoplay muted loop></video> 
+        </div>      
+        <div class="text-container">
+            <h3>Memory is...</h3>
+            <p>Картины на холсте</p>
+            <p>+7(905)45-46-866</p>
+        </div>     
+    </div>
+
+    <div class="discount-div"><h>Только до конца ноября СКИДКА 10%</h></div>
+
+    <div class="info-div">
+      <div class="youtube-div">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ySBKpQOMEIE?si=uWwPgJBySnNdbOj6" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+     <div class="info-div-flex">
+        <div class="info-div-h">Наши преимущества:</div>
+        <diV class="info-div-elem">
+            <img class="icons" src="./imges/ик1.png">
+            <div class="info-div-text">Собственное производство</div>
+        </diV>
+        <div class="info-div-elem">
+            <img class="icons" src="./imges/ик2.png">
+            <div class="info-div-text">Доставка по России</div>
+        </div>
+        <diV class="info-div-elem">
+            <img class="icons" src="./imges/ик3.png">
+            <div class="info-div-text">Профессиональный дизайн</div>
+        </diV>
+        <div class="info-div-elem">
+            <img class="icons" src="./imges/ик4.png">
+            <div class="info-div-text">Сжатые сроки</div>
+        </div>
+        <div class="info-div-elem">
+            <img class="icons" src="./imges/ик6.png">
+            <div class="info-div-text">Оплата при получении</div>
+        </div>
+        <div class="info-div-elem">
+            <img class="icons" src="./imges/ик5.png">
+            <div class="info-div-text">Праздничная упаковка</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider" id="slider">
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <div class="item_col">
+               <h2>Оформление картины в багет</h2>
+               <!-- <h3>Подзаголовок слайда 1</h3>  -->
+               <div class="button-div">
+                <a href="./checkout/index.html">
+                    <button class="menu-button">Заказать </button>
+                </a>   
+               </div>
+            </div>           
+            <img src="./imges/sliders/с1.jpg">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <div class="item_col">
+               <h2>Черно-белая классика</h2>
+               <!-- <h3>Подзаголовок слайда 2</h3>  -->
+               <div class="button-div">
+                <a href="./checkout/index.html">
+                    <button class="menu-button">Заказать </button>
+                </a>   
+              </div>
+            </div>           
+            <img src="./imges/sliders/с2.jpg">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <div class="item_col">
+               <h2>Картина без обработки фото</h2>
+               <!-- <h3>Подзаголовок слайда 3</h3>  -->
+               <div class="button-div">
+                <a href="./checkout/index.html">
+                    <button class="menu-button">Заказать </button>
+                </a>   
+            </div>
+            </div>           
+            <img src="./imges/sliders/с3.jpg">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+        
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <div class="item_col">
+               <h2>Картина в стиле Love is...</h2>
+               <!-- <h3>Подзаголовок слайда 3</h3>  -->
+               <div class="button-div">
+                <a href="./checkout/index.html">
+                    <button class="menu-button">Заказать </button>
+                </a>   
+            </div>
+            </div>           
+            <img src="./imges/sliders/с4.jpg">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <div class="item_col">
+               <h2>Осенний дрим-арт</h2>
+               <!-- <h3>Подзаголовок слайда 3</h3>  -->
+               <div class="button-div">
+                <a href="./checkout/index.html">
+                    <button class="menu-button">Заказать </button>
+                </a>   
+            </div>
+            </div>           
+            <img src="./imges/sliders/с5.jpg">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <div class="item_col">
+               <h2>Картина с пожеланиями</h2>
+               <!-- <h3>Подзаголовок слайда 3</h3>  -->
+               <div class="button-div">
+                <a href="./checkout/index.html">
+                    <button class="menu-button">Заказать </button>
+                </a>   
+            </div>
+            </div>           
+            <img src="./imges/sliders/с6.jpg">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <div class="item_col">
+               <h2>Классический дрим-арт</h2>
+               <!-- <h3>Подзаголовок слайда 3</h3>  -->
+               <div class="button-div">
+                <a href="./checkout/index.html">
+                    <button class="menu-button">Заказать </button>
+                </a>   
+            </div>
+            </div>           
+            <img src="./imges/sliders/с7.jpg">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <div class="item_col">
+               <h2>Замена фона на фото</h2>
+               <!-- <h3>Подзаголовок слайда 3</h3>  -->
+               <div class="button-div">
+                <a href="./checkout/index.html">
+                    <button class="menu-button">Заказать </button>
+                </a>   
+            </div>
+            </div>           
+            <img src="./imges/sliders/с8.jpg">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <div class="item_col">
+               <h2>Летние краски</h2>
+               <!-- <h3>Подзаголовок слайда 3</h3>  -->
+               <div class="button-div">
+                <a href="./checkout/index.html">
+                    <button class="menu-button">Заказать </button>
+                </a>   
+            </div>
+            </div>           
+            <img src="./imges/sliders/с9.jpg">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <div class="item_col">
+               <h2>Нежные тона</h2>
+               <!-- <h3>Подзаголовок слайда 3</h3>  -->
+               <div class="button-div">
+                <a href="./checkout/index.html">
+                    <button class="menu-button">Заказать </button>
+                </a>   
+            </div>
+            </div>           
+            <img src="./imges/sliders/с10.jpg">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+        <div class="arrow_mobile">
+            <a class="previous_mobile" onclick="previousSlide()">&#10094;</a>
+            <a class="next_mobile" onclick="nextSlide()">&#10095;</a>
+        </div>
+        
+    </div> 
+  </main>
+  <footer>
+    <div class="footer-div" id="footer-div">
+        <div class="footer-div-item" width="40%">
+            <img class="footer-img" src="./imges/ик-ф-1.png">
+            <div class="footer-text-div">Ростовская обл., г. Красный Сулин, ул. Ленина 9</div>
+        </div>
+
+        <div class="footer-div-item">
+            <img class="footer-img" src="./imges/ик-ф-2.png">
+            <div class="footer-text-div">memory_is</div>
+        </div>
+        <div class="footer-div-item">
+            <img class="footer-img" src="./imges/ик-ф-3.png">
+            <div class="footer-text-div">+7 (905) 45-46-866</div>
+        </div>
+    </div>
+  </footer>
+  <script>
+    let slideIndex = 1;
+/* Вызываем функцию, которая реализована ниже: */
+    showSlides(slideIndex);
+
+/* Увеличиваем индекс на 1 — показываем следующий слайд: */
+    function nextSlide() {
+       showSlides(slideIndex += 1);
+    }
+
+/* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
+    function previousSlide() {
+       showSlides(slideIndex -= 1);  
+    }
+
+/* Устанавливаем текущий слайд: */
+    function currentSlide(n) {
+       showSlides(slideIndex = n);
+    }
+
+/* Функция перелистывания: */
+    function showSlides(n) {
+/* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
+       let slides = document.getElementsByClassName("item");
+
+/* Проверяем количество слайдов: */
+        if (n > slides.length) {
+           slideIndex = 1
+        }
+        if (n < 1) {
+           slideIndex = slides.length
+        }
+
+/* Проходим по каждому слайду в цикле for: */
+        for (let slide of slides) {
+           slide.style.display = "none";
+        }
+/* Делаем элемент блочным: */
+        slides[slideIndex - 1].style.display = "flex";    
+    }
+</script>
+</body>
+</html>
